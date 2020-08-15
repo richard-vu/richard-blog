@@ -4,7 +4,7 @@ services:
   # Database
   db:
     image: mysql
-    container_name: mysql
+    container_name: mysql_blog
     command: --default-authentication-plugin=mysql_native_password
     volumes:
       - ./db_data/:/var/lib/mysql
@@ -28,7 +28,7 @@ services:
       - '4433:80'
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: password 
+      MYSQL_ROOT_PASSWORD: 'root' 
     networks:
       - wpsite
   #Wordpress
