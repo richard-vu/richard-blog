@@ -1,2 +1,0 @@
-# richard-blog
-My Blog
